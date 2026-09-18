@@ -31,7 +31,7 @@ export const projects: Project[] = [
     description:
       "Mahadipa 26 adalah portal digital yang saya kembangkan sebagai tempat untuk mengelola informasi mahasiswa, kegiatan, agenda, dan dokumentasi angkatan STEKOM 2026. Project ini dibuat secara mandiri dengan fokus pada pengalaman penggunaan yang sederhana, responsif, dan mudah diakses melalui berbagai perangkat.",
 
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React", "Supabase"],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React", "libSQL"],
 
     image: mahadipaImage.src,
 
@@ -42,11 +42,11 @@ export const projects: Project[] = [
       "Informasi agenda dan kegiatan mahasiswa",
       "Hall of Fame dan arsip perjalanan angkatan",
       "Dashboard dengan tampilan responsif untuk desktop dan mobile",
-      "Penyimpanan dan pengelolaan data menggunakan Supabase",
+      "Penyimpanan dan pengelolaan data menggunakan libSQL",
       "Antarmuka sederhana yang dirancang untuk navigasi cepat",
     ],
 
-    demo: "https://mahadipa2026.akhmadrifqy.my.id",
+    demo: "https://mahadipa.vercel.app/",
 
     attribution: {
       label: "Based on the original Mahadipa 26 website",
