@@ -12,6 +12,10 @@ export interface Project {
   features?: string[];
   github?: string;
   demo?: string;
+  attribution?: {
+    label: string;
+    url: string;
+  };
   featured?: boolean;
 }
 
@@ -43,6 +47,11 @@ export const projects: Project[] = [
     ],
 
     demo: "https://mahadipa2026.akhmadrifqy.my.id",
+
+    attribution: {
+      label: "Based on the original Mahadipa 26 website",
+      url: "https://mahadipa2026.vercel.app/",
+    },
 
     featured: true,
   },

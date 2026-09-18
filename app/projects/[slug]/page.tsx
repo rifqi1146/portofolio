@@ -77,28 +77,45 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
               ))}
             </div>
 
-            {/* Links */}
-            <div className="flex items-center gap-3">
-              {project.demo && (
+            {/* Links & Attribution */}
+            <div className="flex flex-col sm:items-end gap-2.5">
+              <div className="flex items-center gap-3">
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-white dark:bg-zinc-100 dark:hover:bg-white dark:text-zinc-950 text-sm font-medium shadow-xs transition-colors"
+                  >
+                    <span>Live Demo</span>
+                    <LuArrowUpRight size={15} />
+                  </a>
+                )}
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg liquid-glass-interactive text-sm font-medium text-foreground hover:border-zinc-400 dark:hover:border-zinc-600 transition-colors"
+                  >
+                    <FaGithub size={15} />
+                    <span>Repository</span>
+                  </a>
+                )}
+              </div>
+
+              {project.attribution && (
                 <a
-                  href={project.demo}
+                  href={project.attribution.url}
                   target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-white dark:bg-zinc-100 dark:hover:bg-white dark:text-zinc-950 text-sm font-medium shadow-xs transition-colors"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs text-muted hover:text-foreground transition-colors group"
                 >
-                  <span>Live Demo</span>
-                  <LuArrowUpRight size={15} />
-                </a>
-              )}
-              {project.github && (
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg liquid-glass-interactive text-sm font-medium text-foreground hover:border-zinc-400 dark:hover:border-zinc-600 transition-colors"
-                >
-                  <FaGithub size={15} />
-                  <span>Repository</span>
+                  <span>{project.attribution.label}</span>
+                  <LuArrowUpRight
+                    size={12}
+                    className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  />
                 </a>
               )}
             </div>
