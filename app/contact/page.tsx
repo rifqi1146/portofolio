@@ -11,7 +11,7 @@ const iconMap = {
 
 export default function ContactPage() {
   return (
-    <div className="max-w-4xl py-4 flex flex-col justify-center min-h-[70vh]">
+    <div className="max-w-4xl py-4 md:py-8 flex flex-col md:justify-center md:min-h-[65vh]">
       {/* Main Title */}
       <Reveal delay={100}>
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground mb-6">
@@ -26,31 +26,32 @@ export default function ContactPage() {
         </p>
       </Reveal>
 
-      {/* Contact Cards in Liquid Glass (3 Items: Email, GitHub, WhatsApp) */}
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {contactConfig.map((item, idx) => {
-          const Icon = iconMap[item.id];
-          const isExternal = item.id !== "email";
-          return (
-            <Reveal key={item.id} delay={200 + idx * 70}>
+      {/* Contact Cards (Email, GitHub, WhatsApp) */}
+      <Reveal delay={200}>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {contactConfig.map((item) => {
+            const Icon = iconMap[item.id];
+            const isExternal = item.id !== "email";
+            return (
               <a
+                key={item.id}
                 href={item.href}
                 target={isExternal ? "_blank" : undefined}
                 rel={isExternal ? "noreferrer" : undefined}
-                className="group relative flex flex-col justify-between p-6 rounded-2xl liquid-glass border border-border/80 hover:border-zinc-400 dark:hover:border-zinc-600 hover:bg-zinc-100/40 dark:hover:bg-zinc-800/30 hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 min-h-[160px]"
+                className="group relative flex flex-col justify-between p-6 rounded-2xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-border/80 hover:border-zinc-400 dark:hover:border-zinc-500 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/40 active:border-zinc-600 dark:active:border-zinc-400 active:bg-zinc-200/40 dark:active:bg-zinc-800/70 md:hover:-translate-y-0.5 transition-colors md:transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 dark:focus-visible:ring-zinc-300 min-h-[160px]"
               >
                 <div className="flex items-center justify-between mb-6">
-                  <div className="p-2.5 rounded-xl bg-zinc-100 dark:bg-zinc-800/80 text-foreground group-hover:text-indigo-600 dark:group-hover:text-indigo-400 group-hover:scale-105 transition-all duration-200">
+                  <div className="p-2.5 rounded-xl bg-zinc-100 dark:bg-zinc-800/80 text-foreground group-hover:bg-zinc-200 dark:group-hover:bg-zinc-700/80 group-hover:text-zinc-950 dark:group-hover:text-white md:group-hover:scale-105 transition-all duration-200">
                     <Icon size={19} />
                   </div>
                   <LuArrowUpRight
                     size={18}
-                    className="text-muted group-hover:text-foreground transition-all duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                    className="text-muted group-hover:text-foreground dark:group-hover:text-white transition-all duration-200 md:group-hover:translate-x-0.5 md:group-hover:-translate-y-0.5"
                   />
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-lg text-foreground group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                  <h3 className="font-bold text-lg text-foreground group-hover:text-zinc-950 dark:group-hover:text-white transition-colors duration-200">
                     {item.name}
                   </h3>
                   <p className="text-xs text-muted font-medium mt-1">
@@ -58,10 +59,10 @@ export default function ContactPage() {
                   </p>
                 </div>
               </a>
-            </Reveal>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      </Reveal>
     </div>
   );
 }

@@ -56,7 +56,7 @@ export default function RootLayout({
           <Sidebar />
 
           {/* Main Content Area */}
-          <main className="relative z-10 md:ml-[260px] min-h-screen p-6 sm:p-10 md:p-16 lg:p-20 max-w-5xl">
+          <main className="relative z-10 md:ml-[260px] min-h-screen p-6 pb-20 sm:p-10 sm:pb-24 md:p-16 md:pb-16 lg:p-20 lg:pb-20 max-w-5xl">
             <PageTransition>{children}</PageTransition>
           </main>
         </ThemeProvider>
