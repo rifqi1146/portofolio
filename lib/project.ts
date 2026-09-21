@@ -1,4 +1,5 @@
 import mahadipaImage from "../image/mahadipa26.jpg";
+import hortikulturaImage from "../image/hortikultura.png";
 import telegramBotImage from "../image/telegrambot.jpg";
 
 export interface Project {
@@ -31,7 +32,14 @@ export const projects: Project[] = [
     description:
       "Mahadipa 26 adalah portal digital yang saya kembangkan sebagai tempat untuk mengelola informasi mahasiswa, kegiatan, agenda, dan dokumentasi angkatan STEKOM 2026. Project ini dibuat secara mandiri dengan fokus pada pengalaman penggunaan yang sederhana, responsif, dan mudah diakses melalui berbagai perangkat.",
 
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React", "libSQL", "Vercel"],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "React",
+      "libSQL",
+      "Vercel",
+    ],
 
     image: mahadipaImage.src,
 
@@ -57,8 +65,52 @@ export const projects: Project[] = [
   },
 
   {
-    slug: "telegram-group-bot",
+    slug: "hortikultura",
     number: "02",
+    title: "Hortikultura",
+
+    shortDescription:
+      "Website katalog bibit hortikultura dengan dashboard admin untuk mengelola produk dan konten.",
+
+    description:
+      "Hortikultura adalah website yang saya kembangkan untuk kebutuhan UMKM Taruna Bumi Mandiri. Website ini menyediakan katalog bibit hortikultura yang dapat dikelola melalui dashboard admin, lengkap dengan sistem CRUD produk, upload dan pengelolaan gambar, pengaturan konten, serta penyimpanan data menggunakan Supabase.",
+
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "Supabase PostgreSQL",
+      "Supabase Storage",
+      "Vercel",
+    ],
+
+    image: hortikulturaImage.src,
+
+    features: [
+      "Katalog produk bibit hortikultura",
+      "Dashboard admin untuk pengelolaan konten",
+      "CRUD produk dan informasi katalog",
+      "Upload dan pengelolaan gambar produk",
+      "Penyimpanan database menggunakan Supabase PostgreSQL",
+      "Supabase Storage untuk penyimpanan gambar",
+      "Sistem autentikasi dan proteksi halaman admin",
+      "Pengelolaan pengaturan dan konten website",
+      "Responsive design untuk desktop dan mobile",
+      "SEO dan metadata untuk halaman publik",
+      "Optimasi performa dan loading halaman",
+      "Integrasi WhatsApp untuk kebutuhan pemesanan",
+    ],
+
+    demo: "https://hortikultura.vercel.app/",
+
+    featured: true,
+  },
+
+  {
+    slug: "telegram-group-bot",
+    number: "03",
     title: "Telegram Group Bot",
 
     shortDescription:
