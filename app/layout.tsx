@@ -30,8 +30,57 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Rifqy · Informatics Engineering",
-  description: "Mahasiswa Teknik Informatika - Universitas STEKOM",
+  title: {
+    default: "Akhmad Rifqy | Portfolio - Informatics Engineering",
+    template: "%s | Akhmad Rifqy",
+  },
+  description:
+    "Portfolio Akhmad Rifqy Al Muzanzi - Mahasiswa Teknik Informatika Universitas STEKOM. Web developer, full-stack engineer, dan pembuat proyek kreatif.",
+  keywords: [
+    "akhmad rifqy",
+    "akhmad rifqy al muzanzi",
+    "akhmad rifqy almuzanzi",
+    "rifqy",
+    "portfolio",
+    "web developer",
+    "full stack developer",
+    "informatics engineering",
+    "teknik informatika",
+    "Universitas STEKOM",
+    "mahasiswa STEKOM",
+    "next.js developer",
+    "react developer",
+    "typescript developer",
+  ],
+  authors: [{ name: "Akhmad Rifqy Al Muzanzi" }],
+  creator: "Akhmad Rifqy Al Muzanzi",
+  metadataBase: new URL("https://akhmadrifqy.vercel.app"),
+  openGraph: {
+    type: "website",
+    locale: "id_ID",
+    url: "https://akhmadrifqy.vercel.app",
+    siteName: "Akhmad Rifqy Portfolio",
+    title: "Akhmad Rifqy | Portfolio - Informatics Engineering",
+    description:
+      "Portfolio Akhmad Rifqy Al Muzanzi - Mahasiswa Teknik Informatika Universitas STEKOM. Web developer, full-stack engineer, dan pembuat proyek kreatif.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Akhmad Rifqy | Portfolio - Informatics Engineering",
+    description:
+      "Portfolio Akhmad Rifqy Al Muzanzi - Mahasiswa Teknik Informatika Universitas STEKOM.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
