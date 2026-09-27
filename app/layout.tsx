@@ -55,6 +55,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Akhmad Rifqy Al Muzanzi" }],
   creator: "Akhmad Rifqy Al Muzanzi",
   metadataBase: new URL("https://akhmadrifqy.com"),
+  icons: {
+    icon: "/favicon.png",
+  },
   openGraph: {
     type: "website",
     locale: "id_ID",
