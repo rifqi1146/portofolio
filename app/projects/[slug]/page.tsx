@@ -6,6 +6,7 @@ import {
   ArrowLeft as LuArrowLeft,
   ArrowUpRight as LuArrowUpRight,
   Check as LuCheck,
+  Send as LuSend,
 } from "lucide-react";
 import { FaGithub } from "@/components/icons/SocialIcons";
 import Reveal from "@/components/Reveal";
@@ -87,8 +88,17 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
                     rel="noreferrer"
                     className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-white dark:bg-zinc-100 dark:hover:bg-white dark:text-zinc-950 text-sm font-medium shadow-xs transition-colors"
                   >
-                    <span>Live Demo</span>
-                    <LuArrowUpRight size={15} />
+                    {project.demo.includes("t.me/") ? (
+                      <>
+                        <LuSend size={15} />
+                        <span>Open Bot</span>
+                      </>
+                    ) : (
+                      <>
+                        <span>Live Demo</span>
+                        <LuArrowUpRight size={15} />
+                      </>
+                    )}
                   </a>
                 )}
                 {project.github && (

@@ -21,7 +21,6 @@ export const contactConfig: ContactItem[] = [
   {
     id: "whatsapp",
     name: "WhatsApp",
-    // Isi nomor WhatsApp sesuai kebutuhan, contoh: https://wa.me/62882005530767
     href: "https://wa.me/62882005530767",
     description: "Kirim pesan langsung via WhatsApp",
   },

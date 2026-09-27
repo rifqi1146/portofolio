@@ -54,11 +54,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Akhmad Rifqy Al Muzanzi" }],
   creator: "Akhmad Rifqy Al Muzanzi",
-  metadataBase: new URL("https://akhmadrifqy.vercel.app"),
+  metadataBase: new URL("https://akhmadrifqy.com"),
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://akhmadrifqy.vercel.app",
+    url: "https://akhmadrifqy.com",
     siteName: "Akhmad Rifqy Portfolio",
     title: "Akhmad Rifqy | Portfolio - Informatics Engineering",
     description:

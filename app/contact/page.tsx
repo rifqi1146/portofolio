@@ -15,14 +15,14 @@ export default function ContactPage() {
       {/* Main Title */}
       <Reveal delay={100}>
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground mb-6">
-          Let&apos;s talk.
+          Punya ide? Yuk wujudkan.
         </h1>
       </Reveal>
 
       {/* Message */}
       <Reveal delay={150}>
         <p className="text-lg sm:text-xl md:text-2xl text-muted font-light leading-relaxed max-w-xl mb-12">
-          Ada ide, pertanyaan, atau sesuatu yang ingin dibangun bareng?
+          Butuh website untuk bisnis, organisasi, atau personal brand? Hubungi kontak dibawah ini.
         </p>
       </Reveal>
 

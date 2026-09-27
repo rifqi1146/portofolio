@@ -147,6 +147,8 @@ export const projects: Project[] = [
       "Logging aktivitas dan konfigurasi setiap grup",
     ],
 
+    demo: "https://t.me/Swordheavenx_bot",
+
     github: "https://github.com/rifqi1146/kiyoshibot",
 
     featured: true,
