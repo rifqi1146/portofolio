@@ -103,7 +103,7 @@ export const projects: Project[] = [
       "Integrasi WhatsApp untuk kebutuhan pemesanan",
     ],
 
-    demo: "https://hortikultura.vercel.app/",
+    demo: "https://tarunabumi.akhmadrifqy.com/",
 
     featured: true,
   },
