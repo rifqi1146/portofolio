@@ -35,15 +35,15 @@ export const metadata: Metadata = {
     template: "%s | Akhmad Rifqy",
   },
   description:
-    "Portfolio Akhmad Rifqy Al Muzanzi - Mahasiswa Teknik Informatika Universitas STEKOM. Web developer, full-stack engineer, dan pembuat proyek kreatif.",
+    "Portfolio Akhmad Rifqy Al Muzanzi - Mahasiswa Teknik Informatika Universitas STEKOM. Junior developer, web developer, dan pembuat proyek kreatif.",
   keywords: [
     "akhmad rifqy",
     "akhmad rifqy al muzanzi",
     "akhmad rifqy almuzanzi",
     "rifqy",
     "portfolio",
+    "junior developer",
     "web developer",
-    "full stack developer",
     "informatics engineering",
     "teknik informatika",
     "Universitas STEKOM",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     siteName: "Akhmad Rifqy Portfolio",
     title: "Akhmad Rifqy | Portfolio - Informatics Engineering",
     description:
-      "Portfolio Akhmad Rifqy Al Muzanzi - Mahasiswa Teknik Informatika Universitas STEKOM. Web developer, full-stack engineer, dan pembuat proyek kreatif.",
+      "Portfolio Akhmad Rifqy Al Muzanzi - Mahasiswa Teknik Informatika Universitas STEKOM. Junior developer, web developer, dan pembuat proyek kreatif.",
   },
   twitter: {
     card: "summary_large_image",
